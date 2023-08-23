@@ -1,0 +1,57 @@
+﻿# sent_enum = 1
+no	spa	INTJ
+pero	spa	CONJ
+yo	spa	PRON
+re	spa	X
+...	eng&spa	PUNCT
+tengo	spa	VERB
+todavía	spa	ADV
+en	spa	ADP
+la	spa	DET
+casa	spa	NOUN
+un	spa	DET
+sobre	spa	ADP
+así	spa	ADV
+...	eng&spa	PUNCT
+
+# sent_enum = 2
+before	eng	SCONJ
+it	eng	PRON
+can	eng	AUX
+go	eng	VERB
+through	eng	ADP
+the	eng	DET
+whole	eng	ADJ
+screening	eng	NOUN
+and	eng	CONJ
+downtown	eng	NOUN
+screens	eng	NOUN
+them	eng	PRON
+and	eng	CONJ
+everything	eng	PRON
+sometimes	eng	ADV
+three	eng	NUM
+times	eng	NOUN
+they	eng	PRON
+have	eng	AUX
+to	eng	PART
+do	eng	VERB
+it	eng	PRON
+.	eng&spa	PUNCT
+
+# sent_enum = 3
+no	spa	INTJ
+es	spa	VERB
+que	spa	SCONJ
+a	spa	ADP
+mí	spa	PRON
+me	spa	PRON
+tenían	spa	VERB
+<unintelligible>	UNK	UNK
+.	eng&spa	PUNCT
+
+# sent_enum = 4
+<unintelligible>	UNK	UNK
+con	spa	ADP
+esto	spa	PRON
+.	eng&spa	PUNCT
