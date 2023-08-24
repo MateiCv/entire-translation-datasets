@@ -1,0 +1,57 @@
+﻿# sent_enum = 1
+Salut	spa	INTJ
+Salut	spa	CONJ
+Salut	spa	PRON
+Salut	spa	X
+...	eng&spa	PUNCT
+Salut	spa	VERB
+Salut	spa	ADV
+Salut	spa	ADP
+Salut	spa	DET
+Salut	spa	NOUN
+Salut	spa	DET
+Salut	spa	ADP
+Salut	spa	ADV
+...	eng&spa	PUNCT
+
+# sent_enum = 2
+before	eng	SCONJ
+it	eng	PRON
+can	eng	AUX
+go	eng	VERB
+through	eng	ADP
+the	eng	DET
+whole	eng	ADJ
+screening	eng	NOUN
+and	eng	CONJ
+downtown	eng	NOUN
+screens	eng	NOUN
+them	eng	PRON
+and	eng	CONJ
+everything	eng	PRON
+sometimes	eng	ADV
+three	eng	NUM
+times	eng	NOUN
+they	eng	PRON
+have	eng	AUX
+to	eng	PART
+do	eng	VERB
+it	eng	PRON
+.	eng&spa	PUNCT
+
+# sent_enum = 3
+Salut	spa	INTJ
+Salut	spa	VERB
+Salut	spa	SCONJ
+Salut	spa	ADP
+Salut	spa	PRON
+Salut	spa	PRON
+Salut	spa	VERB
+<unintelligible>	UNK	UNK
+.	eng&spa	PUNCT
+
+# sent_enum = 4
+<unintelligible>	UNK	UNK
+Salut	spa	ADP
+Salut	spa	PRON
+.	eng&spa	PUNCT

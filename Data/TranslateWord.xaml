@@ -1,0 +1,148 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Translate_word" this:Translate_word.in_word="mama" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_word" Type="InArgument(x:String)" />
+    <x:Property Name="out_translation" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>536,1117.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Translate_word_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Translate_word" sap:VirtualizedContainerService.HintSize="546,1052.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Google Translate" sap:VirtualizedContainerService.HintSize="484,757.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="f0cb90f5-ac13-4d92-a7b7-a4b4a02e3770" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,538" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="0.5" DisplayName="Type Into 'SPAN'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="388,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f0cb90f5-ac13-4d92-a7b7-a4b4a02e3770" Text="[in_word]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=es&amp;tl=ro&amp;op=translate" CvElementArea="916, 448, 954, 254" CvTextArea="1670, 656, 75, 19" CvTextArgument="0 / 5,000" CvType="InputBox" DesignTimeRectangle="944, 471, 851, 48" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='er8xn' aaname='' /&gt;" Guid="8ea8433f-ee0b-4268-98fa-5a65ff28d17f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA1cAAAA0CAYAAABmSsKZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEwSURBVHhe7dcxAQAwEAOh+jedivgbwQVvAAAAnMkVAABAQK4AAAACcgUAABCQKwAAgIBcAQAABOQKAAAgIFcAAAABuQIAAAjIFQAAQECuAAAAAnIFAAAQkCsAAICAXAEAAATkCgAAICBXAAAAAbkCAAAIyBUAAEBArgAAAAJyBQAAEJArAACAgFwBAAAE5AoAACAgVwAAAAG5AgAACMgVAABAQK4AAAACcgUAABCQKwAAgIBcAQAABOQKAAAgIFcAAAABuQIAAAjIFQAAQECuAAAAAnIFAAAQkCsAAICAXAEAAATkCgAAICBXAAAAAbkCAAAIyBUAAEBArgAAAAJyBQAAEJArAACAgFwBAAAE5AoAACAgVwAAAAG5AgAACMgVAABAQK4AAAACcgUAAHC2fbBzId10sicuAAAAAElFTkSuQmCC" InformativeScreenshot="21bfc8b013ee2f4314b79258233212a1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google Translate' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Spanish" CvType="Text" DesignTimeRectangle="1113, 380, 102, 72" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span' isleaf='1' parentid='i9' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='i9' tag='SPAN' class='VfPpkd-YVzG2b' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGoAAABMCAYAAACF1CK8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVDSURBVHhe7Zr9i1RVGMf9O6JEKrB8K7WSQhT6oR9ECIKgCJIwsR/SXzLdfNeyVMQskYjMTNHFVVdJ6cWMgl3F93VLzVRy8nXn/WV3Z3ZnZ/bpfs+dc+fc69mlWWflPvF84DB3ztyXc57PeXnusiNIYIGIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIYoKIcjh+rZcW7s2qz6FwuL2HHnqvQxUcDwd1EXU3U6bFzTl6emXMazCOlx/MUbKrXDkrnOQK/fTy5qRq87R1CYp31t5eFqLORoo0YUVVULDgN5wTVvpKRAuasjTy/Q71ie+1EnpR0VyZpq9PqAY+82GcDrYV1AhFwTHq8BvOwbn/V0Iv6tjVXnq0Iaoa2HgyX6mt0nQ6Tw8v6FDlxwvD04EwwErUzuP3ikp1l+nQ+QI1nyvQ1WifqjP3hHU/dNKmn7to7DJ36cQnvueL/epck0t3+uj1L1P0WOV5+MR31JvooI1eEqVfL/fSon1Z75pJq2O0rbWbSoHJ/c7OjPod7UL7NDjGPqv33kec5RGrw74zBd89TFF7TuWpYb//magLPrNW6rb0ITC7nVlVLN0bZBNT1MiFbueCZX5jxnefA47oUYvcjmN24ln6XMg9fb26B+qg4d5PLK2epwuux0w3sYnK5vvplS0p75qnHFk6+Pj+6ZEu6q800RRl65PtmbVy38nE93/0+AKHzsz+Jk1HL/VYpZmiEGRcj/PuZEr05tdpVY/OHrnoLiHIwpCNof6tbWkvkNdiffTCJ+4e+Pb2tJcEmEF7cUOCfr9VVKO57Z8iPVvZM19zZmLBmLU2UVtbulUd+qbTdsz0ebvdc8c7SdKfldk8lGfWyn2LAjdTJRVELA26wShjHBHBaW+KQoBMrsdLNHm12zG81wBci5mLVwAdRI0twDpoWJKxNJvoIM/83L/E2e6z0ZkxqJu4KqYGheZ2uqSWcizpWNqBKQrHJugH6oea+mvqIkqDd6btx7rVqMJ0RwODy8RgojArZlVmFZadrh73IlzbcqWXXv2iukeZxSYKM+GcM6JNdPAxyiFeYxPVdqPo7Z1Ydt/4KqVmWSRR8vqiGUzUQM+slbqKMkHy8NLG6v6lgzaYKBAMGoIC0RCOgkGAPQxlyhp39g2HKIBEZcampDfodJm6Nk7nHZGa0IvC7EHAkKnZ1l9b+j6YKNuMMpfDDT91+kazLcD1FKVJOEsW7jt3R8ab0c9/HKcbSXdjDL2old/lVCOwRFy47U+TQa2iotmyGq34Te9RCDaCjjozCBA259vhEYVBh8GHQXi4vVA5y+W3v9w+YZbpd8PQizLXcSxJrY4YdBJZHDIe1OE3U6QpCvXoLBIG1OvAm1lf+80iPbnUfca7uzLU6cwy3B/vQzplr7cozGxkkqhDZqmTCQwOJEdo3+MfROnE326yEnpRAH8qsm3wuiAT/OyoPZkYqJjvUfjEd9t5+p3FzKjqIQogadDpP8q45THfe5nZRhaiABqwylkGn/so7m286BTep4J/OTBFYT/6L3+ZwHfbeZt/cYNgSqmXKIBj218mdp3wv9izEVULpqjgHiUMjIhigohigohiwgMXJQwNEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEEcUEnyj8Z5CU8BUgohgUIKIYFDAiEomQlPAXSSZYQPQvxem8PtlYDfkAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DelayBefore="2" DisplayName="Get Text 'SPAN'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="f0cb90f5-ac13-4d92-a7b7-a4b4a02e3770" TextString="[out_translation]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://translate.google.com/?sl=es&amp;tl=ro&amp;text=mama&amp;op=translate" CvType="InputBox" DesignTimeRectangle="1892, 386, 942, 255" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'msedge.exe Google'" Guid="70aca740-5e5b-498c-9abd-6a09e246946d" InformativeScreenshot="338c91dcfaf247481b78f2631addf7bf.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Google Translate' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Romanian" CvType="Text" DesignTimeRectangle="1927, 315, 122, 72" FriendlyName="'SPAN'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;c-wiz&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;button&amp;gt;span' isleaf='1' parentid='i12' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' parentid='i12' tag='SPAN' class='VfPpkd-YVzG2b' aaname='' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 3862, 2136" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAI/SURBVDhPhZLLaxNRFIdn5cL/yZXQR5o22lYs2E2hRdyIC8GFoLEE8mxSfCRtzMK2NCDUmGJJ22xi0QYSGyoTk8zkMXknUAWnTmbl4ue5M5lQtLUHftxhuN93z5w73G2vHJpeVjDlU3CTxavgBsWypGDG1bjGXVYMnF5WMUWZZPGpJFJJosJiP1nrb7u4JklwLkyZcH//bbXmrvS3nl+sbQP+W2BZUvF8qyqIYulDtVrdbjab0Xq9GZWkerRWq73P58szHPtmBt4NqUiLMqSWjMOcrL2bIMH90An4bAGtVhvdbhedTkdLu90GCcGxgbETvxD8bIuGR8+zfh0e97Auevh4yEMQSxr0j2CCps2geventr7YVSDUZXyTZE1gpqxEy+D5HOafujTQSKPRIIGHXZneweI7RTvZFlGQ4E812OxWccdThGNlA55QGM7QJh75gngZjuiCcRIwaP61ipQgo9aVSXaKudWeBo9R2CGBzRg+pzJYj+wglvhEM2npArNbGbQ6CEEGbHL1MErxhXk89gZh879BqVQC3YouGHMpA+AseBYedfZwL9DAQ4cftsAaBEFApVKBJEngTCQwAAMagH14hGJyyogn0tiOJ2APrqNYLKFcLoMbWvzxasTxC0aG+xmy6yuDhx16NvbLKBQEHCRTEEVRF/yvrNajq9dvxcBimdtH4uArtS9qMJvDpQJWCw/iNfPsHnZ2j5DN5rQODAFLf9vF9cSxt/A2kkQmc0w/Uxb5fJ4kBW2QyfTx6h8fcX0dWzi39AAAAABJRU5ErkJggg==" InformativeScreenshot="6eb89e6fad367824808be68dad620efb.jpg" Selector="&lt;html app='msedge.exe' title='Google Translate' /&gt;" Title="Google Translate" Url="https://translate.google.com/?sl=es&amp;tl=ro&amp;op=translate" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[out_translation]" />
+  </Sequence>
+</Activity>
